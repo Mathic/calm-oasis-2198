@@ -2,43 +2,41 @@ $(document).ready(function() {
 
     map1 = new GMaps({
         div: '#map-basic',
-        lat: -12.043333,
-        lng: -77.028333
+        lat: 45.4214,
+        lng: -75.6919
     });
 
     map2 = new GMaps({
         div: '#map-marker',
-        lat: -12.043333,
-        lng: -77.028333
+        lat: 45.4214,
+        lng: -75.6919
     });
     map2.addMarker({
-        lat: -12.043333,
-        lng: -77.03,
-        title: 'Lima',
+        lat: 45.4214,
+        lng: -75.6919,
+        title: 'Ottawa',
         details: {
             database_id: 42,
             author: 'HPNeo'
         },
-        click: function(e) {
-            if (console.log)
-                console.log(e);
-            alert('You clicked in this marker');
+        infoWindow: {
+            content: '<p>HTML Content</p>'
         }
     });
     map2.addMarker({
-        lat: -12.042,
-        lng: -77.028333,
+        lat: 45.4214,
+        lng: -75.6919,
         title: 'Marker with InfoWindow',
         infoWindow: {
-            content: '<p>HTML Content</p>'
+            content: '<p>HTML Content 2</p>'
         }
     });
 
 
     map3 = new GMaps({
         div: '#map-polygon',
-        lat: -12.043333,
-        lng: -77.028333
+        lat: 45.4214,
+        lng: -75.6919
     });
 
     var path = [
@@ -110,8 +108,8 @@ $(document).on('click', '.pan-to-marker', function(e) {
 $(document).ready(function() {
     map = new GMaps({
         div: '#map-interaction',
-        lat: -12.043333,
-        lng: -77.028333
+        lat: 45.4214,
+        lng: -75.6919
     });
 
     GMaps.on('marker_added', map, function(marker) {
@@ -144,7 +142,7 @@ var panorama;
 $(document).ready(function() {
     panorama = GMaps.createPanorama({
         el: '#map-street',
-        lat: 42.3455,
-        lng: -71.0983
+        lat: 45.4214,
+        lng: -75.6919
     });
 });

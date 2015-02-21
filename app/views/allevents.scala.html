@@ -1,0 +1,30 @@
+@(message: String)
+
+@main("Welcome to Turnout") {
+	<div id="page-content-wrapper">
+	    <div id="page-content">
+	        <div id="page-title">
+	            <h2>Calendar</h2>
+	            <p>Full width, drag and drop calendar.</p>
+	        </div>
+	        <!-- Calendar -->
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/interactions-ui/resizable.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/interactions-ui/draggable.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/interactions-ui/sortable.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/interactions-ui/selectable.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/daterangepicker/moment.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/calendar/calendar.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/calendar/calendar-demo.js")"></script>
+	        <div class="panel">
+	            <div class="panel-body">
+	                <h3 class="title-hero">
+	                    Basic
+	                </h3>
+	                <div class="example-box-wrapper">
+	                    <div id="calendar-example-1" class="col-md-10 center-margin"></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+}

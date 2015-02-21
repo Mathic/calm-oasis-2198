@@ -1,0 +1,67 @@
+@(message: String)
+
+@main("Welcome to Turnout") {
+	<div id="page-content-wrapper">
+	    <div id="page-content">
+	        <div id="page-title">
+	            <h2>Calendar</h2>
+	            <p>Full width, drag and drop calendar.</p>
+	        </div>
+	        <!-- Calendar -->
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/interactions-ui/resizable.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/interactions-ui/draggable.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/interactions-ui/sortable.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/interactions-ui/selectable.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/daterangepicker/moment.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/calendar/calendar.js")"></script>
+	        <script type="text/javascript" src="@routes.Assets.at("widgets/calendar/calendar-demo.js")"></script>
+	        <div class="panel">
+	            <div class="panel-body">
+	                <h3 class="title-hero">
+	                    External draggable
+	                </h3>
+	                <div class="example-box-wrapper">
+	                    <div class="col-md-10 center-margin">
+	                        <div class="row">
+	                            <div class="col-md-9">
+	                                <div id="calendar-example-2"></div>
+	                            </div>
+	                            <div class="col-md-3">
+	                                <div class="content-box" id="external-events">
+	                                    <h3 class="content-box-header bg-default">
+	                                        <span class="icon-separator">
+	                                            <i class="glyph-icon icon-calendar"></i>
+	                                        </span>
+	                                        Draggable Events
+	                                    </h3>
+	                                    <div class="content-box-wrapper">
+	                                        <div class="btn display-block mrg5B bg-orange external-event" data-class="bg-orange">
+	                                            <div class="button-content">My Event 1</div>
+	                                        </div>
+	                                        <div class="btn display-block mrg5B bg-primary external-event">
+	                                            <div class="button-content">My Event 2</div>
+	                                        </div>
+	                                        <div class="btn display-block mrg5B bg-yellow external-event">
+	                                            <div class="button-content">My Event 3</div>
+	                                        </div>
+	                                        <div class="btn display-block mrg5B bg-blue-alt external-event">
+	                                            <div class="button-content">My Event 4</div>
+	                                        </div>
+	                                        <div class="btn display-block mrg5B bg-red external-event">
+	                                            <div class="button-content">My Event 5</div>
+	                                        </div>
+	                                        <p>
+	                                            <input type="checkbox" id="drop-remove" />
+	                                            <label for="drop-remove">remove after drop</label>
+	                                        </p>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+}
